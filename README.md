@@ -1,1 +1,1 @@
-# 1st-repository
+# UI_PYQT5 repository
