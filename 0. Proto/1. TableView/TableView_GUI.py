@@ -17,6 +17,7 @@ from PyQt5.QtCore import Qt
 class TableModel(QtCore.QAbstractTableModel):
     def __init__(self, data):
         super().__init__()
+        self.setHorizontalHeaderLabels(["Name", "Image", "Color"])
         self._data = data
 
     def data(self, index, role):
@@ -28,6 +29,7 @@ class TableModel(QtCore.QAbstractTableModel):
 
     def columnCount(self, index):
         return len(self._data[0])
+
 
 class MainWindow(QMainWindow):
     def __init__(self):
